@@ -6,19 +6,9 @@
 <!--  navegacion  -->
 <div>
     <ul class="flex divide-x mt-4">
-        <li routerLinkActive="bg-violet-500" class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLink="/" >Inicio</a></li>
-        <li routerLinkActive="bg-violet-500" class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLink="/servicios">Servicios</a></li>
-        <li routerLinkActive="bg-violet-500" class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLink="/portafolio">Portafolio</a></li>
-        <li routerLinkActive="bg-violet-500" class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLink="/contactos">Contáctenos</a></li>
+        <li class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" [routerLinkActiveOptions]="{exact: true}"  routerLinkActive="bg-violet-500" routerLink="/" >Inicio</a></li>
+        <li class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLinkActive="bg-violet-500" routerLink="/servicios">Servicios</a></li>
+        <li class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLinkActive="bg-violet-500" routerLink="/portafolio">Portafolio</a></li>
+        <li class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLinkActive="bg-violet-500" routerLink="/contactos">Contáctenos</a></li>
     </ul>
 </div>
-<!--
-<div>
-    <ul class="flex divide-x mt-4">
-        <li class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLinkActive="bg-violet-500" [routerLink]="['/']" >Inicio</a></li>
-        <li class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLinkActive="bg-violet-500" [routerLink]="['/servicios', 'servicios', 'web']">Servicios</a></li>
-        <li class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLinkActive="bg-violet-500" [routerLink]="['/portafolio']">Portafolio</a></li>
-        <li class="mx-4"><a class="bg-blue-200 px-4 py-2 rounded-lg" routerLinkActive="bg-violet-500" [routerLink]="['/contactos']">Contáctenos</a></li>
-    </ul>
-</div>
--->

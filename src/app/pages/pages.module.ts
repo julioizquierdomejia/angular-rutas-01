@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ContactenosComponent } from './contactenos/contactenos.component';
+import { BreakingComponent } from './breaking/breaking.component';
 
 
 
@@ -12,10 +13,18 @@ import { ContactenosComponent } from './contactenos/contactenos.component';
     HomeComponent,
     ServiciosComponent,
     PortafolioComponent,
-    ContactenosComponent
+    ContactenosComponent,
+    BreakingComponent
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    HomeComponent,
+    ServiciosComponent,
+    PortafolioComponent,
+    ContactenosComponent,
+    BreakingComponent
   ]
 })
 export class PagesModule { }

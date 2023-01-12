@@ -5,6 +5,10 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ContactenosComponent } from './contactenos/contactenos.component';
 import { BreakingComponent } from './breaking/breaking.component';
+import { WebComponent } from './web/web.component';
+import { VideoComponent } from './video/video.component';
+import { RouterModule } from '@angular/router';
+import { DetailComponent } from './detail/detail.component';
 
 
 
@@ -14,10 +18,14 @@ import { BreakingComponent } from './breaking/breaking.component';
     ServiciosComponent,
     PortafolioComponent,
     ContactenosComponent,
-    BreakingComponent
+    BreakingComponent,
+    WebComponent,
+    VideoComponent,
+    DetailComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     HomeComponent,

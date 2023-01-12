@@ -21,4 +21,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     FooterComponent
   ]
 })
+
 export class ComponentsModule { }

@@ -1,4 +1,11 @@
 <h1 class="text-2xl my-5">HOME</h1>
 <p class="my-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore veniam nesciunt voluptas repellendus. Fugiat nemo aperiam in enim inventore, modi expedita debitis rem recusandae facere sed, beatae, dignissimos harum laudantium?</p>
 
-<img src="https://picsum.photos/id/237/400/400" alt="">
+<button (click)="guardarNombre()" class="border border-solid border-slate-500 px-4 py-2 rounded-lg my-4">Guardar Datos</button>
+<button (click)="mostrarDatos()" class="border border-solid border-slate-500 px-4 py-2 rounded-lg my-4">Mostrar Datos</button>
+
+<p class="bg-stale-300 p-4 rounded-lg">
+    {{new_nombre}}
+</p>
+
+<img src="https://picsum.photos/id/237/400/400" alt=""> 

@@ -9,6 +9,8 @@ import { WebComponent } from './web/web.component';
 import { VideoComponent } from './video/video.component';
 import { RouterModule } from '@angular/router';
 import { DetailComponent } from './detail/detail.component';
+import { DetalleComponent } from './detalle/detalle.component';
+import { DataService } from '../services/data.service';
 
 
 
@@ -21,11 +23,13 @@ import { DetailComponent } from './detail/detail.component';
     BreakingComponent,
     WebComponent,
     VideoComponent,
-    DetailComponent
+    DetailComponent,
+    DetalleComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    
   ],
   exports: [
     HomeComponent,

@@ -11,6 +11,10 @@ import { RouterModule } from '@angular/router';
 import { DetailComponent } from './detail/detail.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { DataService } from '../services/data.service';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+
 
 
 
@@ -24,13 +28,17 @@ import { DataService } from '../services/data.service';
     WebComponent,
     VideoComponent,
     DetailComponent,
-    DetalleComponent
+    DetalleComponent,  
   ],
+
   imports: [
     CommonModule,
     RouterModule,
-    
+    MatProgressBarModule,
+    MatIconModule,
+    MatInputModule
   ],
+
   exports: [
     HomeComponent,
     ServiciosComponent,

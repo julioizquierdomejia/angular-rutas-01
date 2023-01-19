@@ -1,11 +1,34 @@
 <h1 class="text-2xl my-5">HOME</h1>
 <p class="my-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore veniam nesciunt voluptas repellendus. Fugiat nemo aperiam in enim inventore, modi expedita debitis rem recusandae facere sed, beatae, dignissimos harum laudantium?</p>
 
-<button (click)="guardarNombre()" class="border border-solid border-slate-500 px-4 py-2 rounded-lg my-4">Guardar Datos</button>
+<mat-progress-bar mode="determinate" value={{posy}}></mat-progress-bar>
+
+<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+<br>
+
+<div class="mt-15 p-5">
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Favorite food</mat-label>
+          <input matInput placeholder="Ex. Pizza" value="Sushi">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>Leave a comment</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+    </form>
+</div>
+  
+<button (click)="guardarNombre()" class="hover:bg-slate-800 hover:text-white border border-solid border-slate-500 px-4 py-2 rounded-lg my-4">Guardar Datos</button>
 <button (click)="mostrarDatos()" class="border border-solid border-slate-500 px-4 py-2 rounded-lg my-4">Mostrar Datos</button>
 
 <p class="bg-stale-300 p-4 rounded-lg">
-    {{new_nombre}}
+  {{new_nombre}}
+</p>
+
+<p class="bg-stale-300 p-4 rounded-lg">
+  {{logeado}}
 </p>
 
 <img src="https://picsum.photos/id/237/400/400" alt=""> 

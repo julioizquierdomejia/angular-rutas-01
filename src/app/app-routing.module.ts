@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListComponent } from './components/list/list.component';
 import { UsersComponent } from './components/users/users.component';
+import { CheckLoginGuard } from './guard/check-login.guard';
 import { PermisosGuard } from './guard/permisos.guard';
 import { PermissionsGuard } from './guard/permissions.guard';
 import { WithoutSaveGuard } from './guard/without-save.guard';
@@ -10,6 +11,7 @@ import { ContactenosComponent } from './pages/contactenos/contactenos.component'
 import { DetailComponent } from './pages/detail/detail.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
 import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { VideoComponent } from './pages/video/video.component';
@@ -28,6 +30,8 @@ const routes: Routes = [
   },
 
   {path:'usuarios', component:UsersComponent, canActivate:[PermisosGuard]},
+
+  {path:'login', component:LoginComponent, canActivate:[CheckLoginGuard]},
   
   {path:'detalle/:id', component:DetalleComponent},
   {path:'lista', component:ListComponent, canDeactivate:[WithoutSaveGuard]},

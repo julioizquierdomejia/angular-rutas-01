@@ -7,17 +7,16 @@
 <br>
 
 <div class="mt-15 p-5">
-    <form class="example-form">
-        <mat-form-field class="example-full-width">
-          <mat-label>Favorite food</mat-label>
-          <input matInput placeholder="Ex. Pizza" value="Sushi">
-        </mat-form-field>
-      
-        <mat-form-field class="example-full-width">
-          <mat-label>Leave a comment</mat-label>
-          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-        </mat-form-field>
-    </form>
+  <mat-form-field appearance="fill">
+    <mat-label>Input</mat-label>
+    <input matInput>
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Textarea</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+  
 </div>
   
 <button (click)="guardarNombre()" class="hover:bg-slate-800 hover:text-white border border-solid border-slate-500 px-4 py-2 rounded-lg my-4">Guardar Datos</button>

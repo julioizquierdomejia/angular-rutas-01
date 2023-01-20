@@ -14,7 +14,11 @@ import { DataService } from '../services/data.service';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatRadioModule} from '@angular/material/radio';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -28,7 +32,8 @@ import {MatInputModule} from '@angular/material/input';
     WebComponent,
     VideoComponent,
     DetailComponent,
-    DetalleComponent,  
+    DetalleComponent,
+    LoginComponent,
   ],
 
   imports: [
@@ -36,9 +41,17 @@ import {MatInputModule} from '@angular/material/input';
     RouterModule,
     MatProgressBarModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatFormFieldModule,
+    MatRadioModule,
+    FormsModule,
+    
+
   ],
 
+  providers: [
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+  ],
   exports: [
     HomeComponent,
     ServiciosComponent,
